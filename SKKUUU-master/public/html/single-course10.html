@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Club recommendation &amp; SKKU+COMEDU | Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Kakao PlusFried Chat -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+                <a href="#"><span>Email:</span> info@clever.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="clever-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="cleverNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="home"><img src="../img/core-img/logo.png" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="home">Home</a></li>
+                                <li><a href="recommendation">Recommendation</a></li>
+                                <li><a href="themes">Themes</a></li>
+                                <li><a href="team">Team</a></li>
+                            </ul>
+
+                            <!-- Search Button -->
+                            <div class="search-area">
+                                <form action="#" method="post">
+                                    <input type="search" name="search" id="search" placeholder="Search">
+                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+
+                            <!-- Register / Login -->
+                            <div class="register-login-area">
+                                <a href="#" class="btn">Register</a>
+                                <a href="index-login.html" class="btn active">Login</a>
+                            </div>
+
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area">
+        <!-- Breadcumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">동아리</a></li>
+                <li class="breadcrumb-item active" aria-current="page">동아리 연합회</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Single Course Intro Start ##### -->
+    <div class="single-course-intro d-flex align-items-center justify-content-center" style="background-image: url(../img/bg-img/rc1.jpg);">
+        <!-- Content -->
+        <div class="single-course-intro-content text-center">
+            <!-- Ratings -->
+            <div class="ratings">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>성 동 일</h3>
+            <div class="meta d-flex align-items-center justify-content-center">
+                <a href="#">동아리 연합회</a>
+                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                <a href="#">회장 이유림</a>
+            </div>
+            <div class="price">학생회관 401호</div>
+        </div>
+    </div>
+    <!-- ##### Single Course Intro End ##### -->
+
+    <!-- ##### Courses Content Start ##### -->
+    <div class="single-course-content section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="course--content">
+
+                        <div class="clever-tabs-content">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">동아리 소개</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="true">동아리 사진</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">동아리 일정</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="true">동아리 게시판</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--5" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="true">Q & A</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="myTabContent">
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                                    <div class="clever-description">
+
+                                        <!-- About Course -->
+                                        <div class="about-course mb-30">
+                                            <h4>성동일을 소개하겠습니다</h4>
+                                            <p>안녕하세요! 인문사회과학캠퍼스 제 38대 동아리연합회, 성균관대 동아리를 하나로! 성동일(成동一)입니다. 동아리연합회는 성균관대 소속 63개 중앙 동아리를 관리하고 각 동아리들의 활동의 지원하는 일을 하고 있습니다. 여러 동아리들에 관심 있는 학우들에게 어떤 동아리가 있는지 홍보하고 알리기 위해 매년 초에 중앙동아리를 소개하는 동아리 홍보 책자를 만들고 있습니다. 또한 중앙동아리원들의 화합과 발전을 위하여 중앙 동아리원들을 대상으로 동아리 대표자캠프, 동아리의 밤 등 다양한 행사를 개최합니다. 학생회관 사용이나 중앙동아리 활동 등에 대해 궁금한 점이 있으면 학생회관 401호의 문을 두드려 주세요!</p>
+                                        </div>
+
+                                        <!-- All Instructors -->
+                                        <div class="all-instructors mb-30">
+                                            <h4>동아리 구성원</h4>
+
+                                            <div class="row">
+                                                <!-- Single Instructor -->
+                                                <div class="col-lg-6">
+                                                    <div class="single-instructor d-flex align-items-center mb-30">
+                                                        <div class="instructor-thumb">
+                                                            <img src="../img/bg-img/pf.jpg" alt="">
+                                                        </div>
+                                                        <div class="instructor-info">
+                                                            <h5>동아리 회장</h5>
+                                                            <span>이유림 경제(17)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Instructor -->
+                                                <div class="col-lg-6">
+                                                    <div class="single-instructor d-flex align-items-center mb-30">
+                                                        <div class="instructor-thumb">
+                                                            <img src="../img/bg-img/pf.jpg" alt="">
+                                                        </div>
+                                                        <div class="instructor-info">
+                                                            <h5>동아리 부회장</h5>
+                                                            <span>아이린 벨벳(10)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Instructor -->
+                                                <div class="col-lg-6">
+                                                    <div class="single-instructor d-flex align-items-center mb-30">
+                                                        <div class="instructor-thumb">
+                                                            <img src="../img/bg-img/pf.jpg" alt="">
+                                                        </div>
+                                                        <div class="instructor-info">
+                                                            <h5>동아리 홍보부장</h5>
+                                                            <span>아이유 카카오M(12)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Instructor -->
+                                                <div class="col-lg-6">
+                                                    <div class="single-instructor d-flex align-items-center mb-30">
+                                                        <div class="instructor-thumb">
+                                                            <img src="../img/bg-img/pf.jpg" alt="">
+                                                        </div>
+                                                        <div class="instructor-info">
+                                                            <h5>동아리 총부</h5>
+                                                            <span>아이유 카카오M(12)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                                    <div class="clever-curriculum">
+
+                                        <!-- About Curriculum -->
+                                        <div class="about-curriculum mb-30">
+                                            <img src="../img/club_img/1.jpg" style="width:32%" onclick="Popup(this);">
+                                            <img src="../img/club_img/2.jpg" style="width:32%" onclick="Popup(this);">
+                                            <img src="../img/club_img/5.jpg" style="width:32%" onclick="Popup(this);">
+                                            <!-- The grid: four columns -->
+                                            <!--
+                                                <div class="gallery">
+                                                    <img src="../img/club_img/1.jpg" style="width:30%" alt="동아리 연합회" onclick="myFunction(this);">
+                                                </div>
+                                                <div class="gallery">
+                                                    <img src="../img/club_img/2.jpg" style="width:30%" onclick="myFunction(this);">
+                                                </div>
+                                                <div class="gallery">
+                                                    <img src="../img/club_img/5.jpg" style="width:30%" onclick="myFunction(this);">
+                                                </div>
+                                                -->
+                                            
+      
+                                            <!-- The expanding image container -->
+                                            <div class="container">
+
+                                                <!-- Close the image -->
+                                                <span onclick="this.parentElement.style.display='none'" class="closebtn" style="float:right">&times;</span>
+      
+                                                <!-- Expanded image -->
+                                                <img id="expandedImg" style="width:100%">
+      
+                                                <!-- Image text -->
+                                                <div id="imgtext"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+
+                                    <div class="clever-review">
+                                        <!-- About Review -->
+                                        <div class="about-review mb-30">
+                                            <iframe src="https://calendar.google.com/calendar/embed?src=sunghyeon86%40gmail.com&ctz=Asia%2FSeoul" style="border: 0" width="100%" height="400px" frameborder="0" scrolling="no"></iframe>
+                                        </div>
+
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab--4">
+                                        <div class="clever-review">
+                                                       
+                                               
+                                                <!-- Single Review -->
+                                                <div class="single-review mb-30">
+                                                    <div class="d-flex justify-content-between mb-30">
+                                                        <!-- Review Admin -->
+                                                        <div class="review-admin d-flex">
+                                                            <div class="thumb">
+                                                                <img src="../img/bg-img/pf.jpg" alt="">
+                                                            </div>
+                                                            <div class="text">
+                                                                <h6>Sarah Parker</h6>
+                                                                <span>May 29, 2019 at 9:48 am</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Ratings -->
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../img/club_img/10.jpg" alt="">
+                                                    
+                                                </div>
+        
+                                                <!-- Single Review -->
+                                                <div class="single-review mb-30">
+                                                    <div class="d-flex justify-content-between mb-30">
+                                                        <!-- Review Admin -->
+                                                        <div class="review-admin d-flex">
+                                                            <div class="thumb">
+                                                                <img src="../img/bg-img/pf.jpg" alt="">
+                                                            </div>
+                                                            <div class="text">
+                                                                <h6>동아리 회장</h6>
+                                                                <span>Mar 29, 2019 at 9:48 am</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Ratings -->
+                                                        <div class="ratings">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <img src="../img/club_img/11.jpg" alt="">
+                                                    
+                                                </div>
+                                            </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab--5">
+                                    <div class="clever-description">
+
+                                    <!-- FAQ -->
+                                     <div class="clever-faqs">
+                                            <h4>FAQs</h4>
+
+                                            <div class="accordions" id="accordion" role="tablist" aria-multiselectable="true">
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">이 사이트 이외에 동아리 연합회 소식을 어디에서 접할 수 있나요?
+                                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    </a></h6>
+                                                    <div id="collapseOne" class="accordion-content collapse show">
+                                                        <p>▶ 네이버 카페 : https://cafe.naver.com/myskku</p>
+                                                        <p>▶ 페이스북 : https://www.facebook.com/sungdongil.SKKU</p>
+                                                        <p>▶ 인스타그램 : https://www.instagram.com/skku_sungdongil38</p>
+                                                        <p>위의 주소로 들어오시면 새로운 소식을 받으실 수 있습니다</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">동아리 회비는 얼마를 내야 하나요?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseTwo" class="accordion-content collapse">
+                                                        <p>저희 동아리는 동아리 회비가 없습니다!</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">중앙 동아리 신규 모집은 어제쯤 하나요?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseThree" class="accordion-content collapse">
+                                                        <p>2019년 기준으로 5/20 ~ 5/24이었습니다.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="course-sidebar">
+                        <!-- Apply Course -->
+                        <a href="javascript:void plusFriendChat()" class="btn clever-btn mb-30 w-100"> MESSAGE </a>
+
+                        <!-- Widget -->
+                        <div class="sidebar-widget">
+                            <h4>동아리 분석수치</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <h6><i class="fa fa-handshake-o" aria-hidden="true"></i> 친밀도</h6>
+                                    <h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    </h6>
+                                    <h6>80%</h6>
+                                </li>
+                                <li>
+                                    <h6><i class="fa fa-music" aria-hidden="true"></i> 음악성</h6>
+                                    <h6>20%</h6>
+                                </li>
+                                <li>
+                                    <h6><i class="fa fa-users" aria-hidden="true"></i> 학생밀집도</h6>
+                                    <h6>10%</h6>
+                                </li>
+                                <li>
+                                    <h6><i class="fa fa-heart" aria-hidden="true"></i> 감성적</h6>
+                                    <h6>85%</h6>
+                                </li>
+                                <li>
+                                    <h6><i class="fa fa-envira" aria-hidden="true"></i> 자연친화적</h6>
+                                    <h6>75%</h6>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Widget -->
+                        <div class="sidebar-widget">
+                            <h4>동아리 대표사진</h4>
+                            <img src="../img/bg-img/성동일.jpg" alt="">
+                        </div>
+
+                        <!-- Widget -->
+                        <div class="sidebar-widget">
+                            <h4>다가오는 행사</h4>
+
+                            <!-- Single Courses -->
+                            <div class="single--courses d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="../img/bg-img/yml.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5>고하노라</h5>
+                                    <h6>8/26</h6>
+                                </div>
+                            </div>
+
+                            <!-- Single Courses -->
+                            <div class="single--courses d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="../img/bg-img/yml2.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5>대동제</h5>
+                                    <h6>8/7</h6>
+                                </div>
+                            </div>
+
+                            <!-- Single Courses -->
+                            <div class="single--courses d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="../img/bg-img/yml3.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5>국토대장정</h5>
+                                    <h6>8/3</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Courses Content End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="home"><img src="../img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        <!-- Copywrite -->
+                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+                <a href="#"><span>Email:</span> info@clever.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Gallery js -->
+    <script src="js/gallery.js"></script>
+    <!-- OpenChat js -->
+    <script type='text/javascript'>
+        //<![CDATA[
+            // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('9852f116cbccc716eda45fdfe2470b0c');
+            function plusFriendChat(){
+                Kakao.PlusFriend.chat({
+                    //plusFriendId: '_RwuuT'
+                    //plusFriednId: '_VdPJj'
+                    plusFriendId: '_xlrpxlT'
+                });
+            }
+    </script>
+
+</body>
+
+</html>
