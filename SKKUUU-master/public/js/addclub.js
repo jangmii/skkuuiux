@@ -17,14 +17,14 @@ div1.className="col-12 col-lg-6";
 
 var div2 = document.createElement("div");
 div2.className="single-blog-area mb-100 wow fadeInUp";
-// div2.data-wow-delay = "500ms"; //에러남
+// div2.data-wow-delay = "500ms"; //에러남ㅠㅠ
 
 var imgg = document.createElement("img");
 if( id<=2 )
-    imgg.src=`../img/theme-img/a${id}.jpg`; //여기 새로 입력받은 이미지로 추가해야함!!!
+    imgg.src=`../img/theme-img/a${id}.jpg`; //이미 있는거
 else
     imgg.src=img;
-// imgg.scr=window.URL.createObjectURL(img);
+
 div2.appendChild(imgg);
 
 var div3 = document.createElement("div");
@@ -45,6 +45,13 @@ div4.className = "meta d-flex align-items-center";
 var a2 = document.createElement("a");
 a2.appendChild(document.createTextNode("Seoul/Suwon"));
 div4.appendChild(a2);
+
+var span = document.createElement("span");
+// var i = document.createElement("i");
+// i.className="fa fa-circle";
+// i.aria-hidden ="true";
+// span.appendChild(i);
+div4.appendChild(span);
 
 var a3 = document.createElement("a");
 a3.appendChild(document.createTextNode("Art & Culture"));
@@ -68,9 +75,9 @@ createClub(inputClubName.value, inputClubSul.value, clubs.length+1, window.URL.c
 
 function init(){
 // var eximg = NEW image;
+savebtn.addEventListener("click",handleClick);
 createClub("Hogwarts","성균관대학교 중앙 마술동아리",1,`../img/theme-img/a1.jpg`);
 createClub("SKKUO","SKKU Orchestra",2,`../img/theme-img/a2.jpg`);
-savebtn.addEventListener("click",handleClick);
 
 }
 
