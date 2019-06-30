@@ -1963,3 +1963,10 @@ textarea:focus {
         color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+#deletebtn{
+  display: inline-block;
+  text-align: right;
+  
+}
