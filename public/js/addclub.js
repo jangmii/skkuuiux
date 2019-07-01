@@ -1,6 +1,6 @@
 const clubRow = document.querySelector(".clubrow"),
 savebtn = document.querySelector("#savebtn"),
-deletebtn = document.querySelector("#deletebtn");
+deletebtn = document.querySelector(".deletebtn");
 
 let clubs = [];
 
@@ -12,7 +12,7 @@ const clubObj = {
     img
 }
 clubs.push(clubObj);
-//console.log(clubs);
+
 var div1 = document.createElement("div");
 div1.className="col-12 col-lg-6";
 
@@ -65,12 +65,14 @@ p.appendChild(document.createTextNode(description));
 var button = document.createElement("button");
 button.type="button";
 button.className="btn btn-secondary";
-button.id = "deletebtn";
+button.classList.add ("deletebtn");
+button.addEventListener("click",deleteClub);
 button.appendChild(document.createTextNode("X"));
 div3.appendChild(p);
 div3.appendChild(button);
 div2.appendChild(div3);
 div1.appendChild(div2);
+div1.id = id;
 clubRow.appendChild(div1);
 }
 
@@ -81,16 +83,22 @@ const inputClubImg = document.querySelector("#club-img");
 createClub(inputClubName.value, inputClubSul.value, clubs.length+1, window.URL.createObjectURL(inputClubImg.files[0]));
 }
 
+function deleteClub(event){
+    const btn = event.target;
+    const parent = btn.parentNode.parentNode.parentNode;
+    clubRow.removeChild(parent);
+    const cleanClubs = clubs.filter(function(club){
+        return club.id !== parseInt(parent.id);
+    });
+    clubs = cleanClubs;
+   //console.log(clubs);
+}
 function init(){
 // var eximg = NEW image;
-savebtn.addEventListener("click",handleClick);
-deletebtn.addEventListener("click",function(){
-   
-}
-)
 createClub("Hogwarts","성균관대학교 중앙 마술동아리",1,`../img/theme-img/a1.jpg`);
 createClub("SKKUO","SKKU Orchestra",2,`../img/theme-img/a2.jpg`);
-
+savebtn.addEventListener("click",handleClick);
+deletebtn.addEventListener("click",deleteClub);
 }
 
 init();
