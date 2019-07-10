@@ -21,10 +21,7 @@ div2.className="single-blog-area mb-100 wow fadeInUp";
 // div2.data-wow-delay = "500ms"; //에러남ㅠㅠ
 
 var imgg = document.createElement("img");
-if( id<=2 )
-    imgg.src=`../img/theme-img/a${id}.jpg`; //이미 있는거
-else
-    imgg.src=img;
+imgg.src=img;
 
 div2.appendChild(imgg);
 
@@ -68,8 +65,17 @@ button.className="btn btn-secondary";
 button.classList.add ("deletebtn");
 button.addEventListener("click",deleteClub);
 button.appendChild(document.createTextNode("X"));
+
+var button2 = document.createElement("button");
+button2.type="button";
+button2.className="btn btn-primary";
+button2.classList.add("updatebtn");
+button2.setAttribute('onclick','window.location.href="../single-course10.html"');
+button2.appendChild(document.createTextNode("수정"));
+
 div3.appendChild(p);
 div3.appendChild(button);
+div3.appendChild(button2);
 div2.appendChild(div3);
 div1.appendChild(div2);
 div1.id = id;
@@ -77,10 +83,10 @@ clubRow.appendChild(div1);
 }
 
 function handleClick(){
-const inputClubName = document.querySelector("#club-name");
-const inputClubSul = document.querySelector("#club-sul");
-const inputClubImg = document.querySelector("#club-img");
-createClub(inputClubName.value, inputClubSul.value, clubs.length+1, window.URL.createObjectURL(inputClubImg.files[0]));
+    const inputClubName = document.querySelector("#club-name");
+    const inputClubSul = document.querySelector("#club-sul");
+    const inputClubImg = document.querySelector("#club-img");
+    createClub(inputClubName.value, inputClubSul.value, clubs.length+1, window.URL.createObjectURL(inputClubImg.files[0]));
 }
 
 function deleteClub(event){
@@ -93,12 +99,15 @@ function deleteClub(event){
     clubs = cleanClubs;
    //console.log(clubs);
 }
+
+
 function init(){
-// var eximg = NEW image;
+
 createClub("Hogwarts","성균관대학교 중앙 마술동아리",1,`../img/theme-img/a1.jpg`);
 createClub("SKKUO","SKKU Orchestra",2,`../img/theme-img/a2.jpg`);
 savebtn.addEventListener("click",handleClick);
 deletebtn.addEventListener("click",deleteClub);
+// updatebtn.addEventListener("click",updateClub);
 }
 
 init();
