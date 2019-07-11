@@ -70,7 +70,7 @@ var button2 = document.createElement("button");
 button2.type="button";
 button2.className="btn btn-primary";
 button2.classList.add("updatebtn");
-button2.setAttribute('onclick','window.location.href="../single-course10.html"');
+button2.setAttribute('onclick','window.location.href="../single-course11.html"');
 button2.appendChild(document.createTextNode("수정"));
 
 div3.appendChild(p);
