@@ -16,11 +16,85 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bowlby+One+SC|Do+Hyeon|Francois+One|Nanum+Gothic+Coding|Poor+Story&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bowlby+One+SC|Do+Hyeon|Francois+One|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
     <!-- Kakao PlusFried Chat -->
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
+    <style>
+        html, body {
+            width: 100%; height: 100%;
+            margin:0; padding:0;
+        }
+        *{
+            min-width: 0 !important;
+        }
+            h3{/*성동일*/
+                font-family: 'Do Hyeon', sans-serif;
+                font-size: 1.3cm !important
+            }
+            .logo{
+                width: 7cm;
+                height: 1.5cm;
+            }
+            h2{
+                font-family: 'Bowlby One SC', cursive;
+                font-size: 2cm !important;
+                color:rgb(255, 246, 205) !important;
+            }
+            .hero-area{
+                max-width: 100%;
+                max-height: 100%;
+                height: 12cm;
+                overflow: hidden;
+            }
+            #button{
+                height: 1.2cm;
+                width: 3.4cm;
+                font-size: 0.5cm;
+                background-color: rgb(86,194,145);
+                color: rgb(255, 244, 208);
     
+            }
+            h5{
+               font-family: 'Do Hyeon', sans-serif;
+               font-size: 1cm !important;
+               
+            }
+            h6{
+                color: rgb(80,187,172);
+            }
+            .staimg{
+                height: 3cm;
+                width: 2cm;
+            }
+            h4{
+                font-family: 'Do Hyeon', sans-serif;
+            }
+            .breadcrumb{
+                font-family: 'Nanum Gothic Coding', monospace;
+            }
+            #intro{
+                font-family: 'Poor Story', cursive !important;
+                font-size: 0.6cm;
+            }
+           .nav{
+               font-family: 'Do Hyeon', sans-serif;
+               text-align: center !important;
+           }
+           p{
+            font-family: 'Poor Story', cursive !important;
+            font-size: 0.5cm;
+           }
+           #bar{
+            float: right !important;
+            right: 0;
+            color: rgb(86,194,145)!important;
+            }
+
+        </style>
 
 </head>
 
@@ -30,41 +104,27 @@
         <div class="spinner"></div>
     </div>
 
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
+    <!-- ##### Header Area Start ##### 
+    <header class="header-area">-->
 
-        <!-- Top Header Area -->
-        <div class="top-header-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
 
-        <!-- Navbar Area -->
+
+        <!-- Navbar Area 
         <div class="clever-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="cleverNav">
+            <div class="classy-nav-container breakpoint-off">-->
+                <!-- Menu 
+                <nav class="classy-navbar justify-content-between" id="cleverNav">-->
 
-                    <!-- Logo -->
-                    <a class="nav-brand" href="home"><img src="../img/core-img/logo.png" alt=""></a>
+                    <!-- Logo 
+                    <a class="nav-brand" href="home"><img src="../img/core-img/logo.png" class="logo" alt=""></a>-->
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
 
-                    <!-- Menu -->
-                    <div class="classy-menu">
+                    <!-- Menu 
+                    <div class="classy-menu">-->
 
                         <!-- Close Button -->
                         <div class="classycloseIcon">
@@ -72,40 +132,71 @@
                         </div>
 
                         <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul>
-                                <li><a href="home">Home</a></li>
-                                <li><a href="recommendation">Recommendation</a></li>
-                                <li><a href="themes">Themes</a></li>
-                                <li><a href="team">Team</a></li>
+                        <div class="classynav" style="background-color:rgb(0, 0, 0); line-height: 0;">
+                            <a class="nav-brand" href="home" style="display:inline-block;"><img class="logo" src="../img/core-img/logo.PNG" alt=""></a>   
+                            <ul id="bar" style="font-family: 'Do Hyeon', sans-serif;">
+                                    
+                                    
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent: 1cm;letter-spacing:0.1cm;">동아리</a></button>&nbsp;
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">소모임</a></button>&nbsp;
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">스터디</a></button>&nbsp;
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="team" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">학회</a></button>&nbsp;&nbsp;&nbsp;
+                                    <!--search-->
+                                    <form action="#" method="post"style="display:inline-block;height:0.6cm;">
+                                            <input style="font-family: 'Acme', sans-serif;" type="search" name="search" id="search" placeholder="Search">
+                                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>&nbsp;&nbsp;&nbsp;
+                                    <!--register & login-->
+                                    <div style="font-family: 'Acme', sans-serif;display:inline-block;margin-right: 2cm;margin-top:0.3cm;">
+                                            <span style="color: rgb(245, 255, 226)">
+                                            <button style="background-color: black;" type="button" class="btn btn-outline-dark">Register</button>
+                                            <button style="background-color: black;" type="button" class="btn btn-outline-dark">Log In</button>
+                                            </span>
+                                    </div>
+                                    <!--
+                                    <li><a href="index.html" style="font-size: 0.7cm;">Home</a></li>
+                                    <li><a href="courses.html" style="font-size: 0.7cm;">Recommendation</a></li>
+                                    <li><a href="themes.html" style="font-size: 0.7cm;">Themes</a></li>
+                                    <li><a href="team.hmtl" style="font-size: 0.7cm;"">Team</a></li>
+                                    -->
+                                    
                             </ul>
 
-                            <!-- Search Button -->
-                            <div class="search-area">
-                                <form action="#" method="post">
-                                    <input type="search" name="search" id="search" placeholder="Search">
-                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-
-                            <!-- Register / Login -->
-                            <div class="register-login-area">
-                                <a href="#" class="btn">Register</a>
-                                <a href="index-login.html" class="btn active">Login</a>
-                            </div>
-
+                        <!-- Search Button//
+                        <div class="search-area">
+                            <form action="#" method="post">
+                                <input type="search" name="search" id="search" placeholder="Search">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
                         </div>
-                        <!-- Nav End -->
+                     -->
+                        
+
                     </div>
-                </nav>
-            </div>
-        </div>
+                        <!-- Nav End -->
+                
+
     </header>
     <!-- ##### Header Area End ##### -->
+    <!-- Top Header Area -->
+    <div class="top-header-area d-flex justify-content-between align-items-center">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+            <a href="#"><span>Email:</span> info@clever.com</a>
+        </div>
+        <!-- Follow Us -->
+        <div class="follow-us">
+            <span>Follow us</span>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+  
+    </div>
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area">
-        <!-- Breadcumb -->
+    <!-- <div class="breadcumb-area">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -113,7 +204,7 @@
                 <li class="breadcrumb-item active" aria-current="page">동아리 연합회</li>
             </ol>
         </nav>
-    </div>
+    </div> -->
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Single Course Intro Start ##### -->
@@ -134,7 +225,7 @@
                 <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                 <a href="#">회장 이유림</a>
             </div>
-            <div class="price">학생회관 401호</div>
+            <div class="price" style="color:#FFF;">학생회관 401호</div>
         </div>
     </div>
     <!-- ##### Single Course Intro End ##### -->
@@ -438,7 +529,7 @@
                 <div class="col-12 col-lg-4">
                     <div class="course-sidebar">
                         <!-- Apply Course -->
-                        <a href="javascript:void plusFriendChat()" class="btn clever-btn mb-30 w-100"> MESSAGE </a>
+                        <a href="javascript:void plusFriendChat()" class="btn clever-btn mb-30 w-100" style="background-color : rgb(86,194,145);"> MESSAGE </a>
 
                         <!-- Widget -->
                         <div class="sidebar-widget">

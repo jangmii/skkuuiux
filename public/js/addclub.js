@@ -70,12 +70,20 @@ var button2 = document.createElement("button");
 button2.type="button";
 button2.className="btn btn-primary";
 button2.classList.add("updatebtn");
+button2.style="margin-left:3%";
 button2.setAttribute('onclick','window.location.href="../single-course11.html"');
 button2.appendChild(document.createTextNode("수정"));
+
+var button3 = document.createElement("button");
+button3.type="button";
+button3.className="btn btn-outline-success";
+button3.style="margin-left:55%";
+button3.appendChild(document.createTextNode("MESSAGE"));
 
 div3.appendChild(p);
 div3.appendChild(button);
 div3.appendChild(button2);
+div3.appendChild(button3);
 div2.appendChild(div3);
 div1.appendChild(div2);
 div1.id = id;

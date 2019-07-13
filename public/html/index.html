@@ -19,9 +19,192 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bowlby+One+SC|Do+Hyeon|Francois+One|Nanum+Gothic+Coding|Poor+Story&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bowlby+One+SC|Do+Hyeon|Francois+One|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
     <!-- Kakao PlusFried Chat -->
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <style>
+        html, body {
+            width: 100%; height: 100%;
+            margin:0; padding:0;
+        }
+        *{
+            min-width: 0 !important;
+        }
+        p{   
+            font-family: 'Do Hyeon', sans-serif;
+            font-weight: 10;
+            font-size: 2.4cm !important;
+            color:rgb(255, 255, 255) !important;
+            text-align:  left;
+            white-space: pre;
+            overflow: hidden;
+            /*width: 40em;*/
+            animation: type 1.4s steps(20, end);
+          }
+          
+          p:nth-child(2){
+            animation: type2 2s steps(20, end);
+          }
+          
+          p:nth-child(3){
+            animation: type3 2.8s steps(20, end);
+          }
+          
+          @keyframes type{ 
+            from { width: 0; } 
+          } 
+          
+          @keyframes type2{
+            0%{width: 0;}
+            50%{width: 0;}
+            100%{ width: 100%; } 
+          } 
+          
+          @keyframes type3{
+            0%{width: 0;}
+            50%{width: 0;}
+            100%{ width: 100%; } 
+          }
+          @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+        h3{
+            font-family: 'Do Hyeon', sans-serif;
+            background-color: rgb(228, 228, 228);
+            color: rgb(0,0,0);
+            font-size: 0.9cm !important;
+            text-align: center;
+            letter-spacing:0.2cm;
+            font-weight: 5;
+        }
+        .logo{
+            width: 7cm;
+            height: 1.5cm;
+        }
+        h2{
+    
+            font-family: 'Do Hyeon', sans-serif;
+            font-weight: 10;
+            font-size: 2.5cm !important;
+            color:rgb(255, 255, 255) !important;
+        }
+        #bar{
+            float: right !important;
+            right: 0;
+            color: rgb(86,194,145)!important;
+        }
+        #bg{
+
+            background: url(../img/bg-img/main.jpg) no-repeat center center fixed !important; 
+            max-width: 100%;
+            max-height: 100%;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            overflow: auto;
+            right: 0;
+            top: 5px;
+            padding-top: 30px;
+            margin-top: 0;
+            
+            }
+
+        #badge badge-danger{
+            height: 1.2cm;
+            width: 3.4cm;
+            font-size: 0.5cm;
+            background-color: rgb(194, 86, 149);
+            color: rgb(255, 244, 208);
+
+        }
+        #container{
+            border-style: solid;
+            border-color: white;
+        }
+        h5{
+           font-family: 'Do Hyeon', sans-serif;
+           font-size: 1cm !important;
+           
+        }
+        h6{
+            color: rgb(86,194,145);
+            font-size: 1cm !important;
+            font-weight: bold;
+        }
+        .staimg{
+            height: 3cm;
+            width: 2cm;
+        }
+        h4{
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .footer-logo{
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            text-align: center !important;
+            width: 4cm;
+            height: 1cm;
+        }
+        #body{
+            background-color: black;
+        }
+        #border1{
+            margin-top: 2cm;
+            margin: 30px;
+            border-style: solid;
+            border-bottom-color: white;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+            border-width: 0.15cm;
+            padding: 15px;
+            padding-bottom: 1cm;
+           
+        }
+        #border2{
+            margin-top: 2cm;
+            margin: 30px;
+            border-style: solid;
+            border-bottom-color: white;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+            border-width: 0.15cm;
+            padding: 15px;
+        }
+        #border3{
+            margin-top: 2cm;
+            margin: 30px;
+            border-style: solid;
+            border-bottom-color:white;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+            border-width: 0.15cm;
+            padding: 30px;
+            padding-bottom: 1cm;
+            padding-top: 0.3cm;
+        }
+        #border4{
+            margin-top: 2cm;
+            margin: 30px;
+            border-style: solid;
+            border-bottom-color:white;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+            border-width: 0.15cm;
+            padding: 15px;
+        }
+        /*#icon{
+           
+        }*/
+    </style>
 
 
 </head>
@@ -32,517 +215,523 @@
         <div class="spinner"></div>
     </div>
 
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
+    <!-- ##### Header Area Start ##### <header class="header-area" >-->
+        <!-- Navbar Area//        <div class="clever-main-menu"> -->
+                <!-- Menu 
+                <nav class="classy-navbar justify-content-between" id="cleverNav">-->
+                    <!-- Logo and nav bar -->
 
-        <!-- Navbar Area -->
-        <div class="clever-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="cleverNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="home"><img src="../img/core-img/logo.png" alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-
-                        <!-- Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul>
-                                <li><a href="home">Home</a></li>
-                                <li><a href="recommendation">Recommendation</a></li>
-                                <li><a href="themes">Themes</a></li>
-                                <li><a href="team">Team</a></li>
-                            </ul>
-
-                            <!-- Search Button -->
-                            <div class="search-area">
-                                <form action="#" method="post">
-                                    <input type="search" name="search" id="search" placeholder="Search">
+                    <div class="classynav" style="background-color:rgb(0, 0, 0); line-height: 0;">
+                        <a class="nav-brand" href="home" style="display:inline-block;"><img class="logo" src="../img/core-img/logo.PNG" alt=""></a>
+                        <ul id="bar" style="font-family: 'Do Hyeon', sans-serif;">
+                            <!--navbar 없앰
+                            <button style="background-color: rgb(0, 0, 0)!important;" type="button" class="btn btn-dark"><a href="recommendation" style="color:rgb(95,95,95);font-size: 0.6cm;letter-spacing: 0.1cm;">Recommendation</a></button>&nbsp;
+                            <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent: 1cm;letter-spacing:0.1cm;">동아리</a></button>&nbsp;
+                            <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">소모임</a></button>&nbsp;
+                            <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">스터디</a></button>&nbsp;
+                            <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">학회</a></button>&nbsp;&nbsp;&nbsp;
+                            -->
+                            <!--Search-->
+                            <form action="#" method="post"style="display:inline-block;height:0.6cm;">
+                                    <input style="font-family: 'Acme', sans-serif;" type="search" name="search" id="search" placeholder="Search">
                                     <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
+                            </form>&nbsp;&nbsp;
+                            <!--register & login-->
+                            <div style="font-family: 'Acme', sans-serif;display:inline-block;margin-right: 2cm;margin-top:0.3cm;">
+                                    <span style="color: rgb(245, 255, 226)">
+                                    <button style="background-color: black;" type="button" class="btn btn-outline-dark">Register</button>
+                                    <button style="background-color: black;" type="button" class="btn btn-outline-dark">Log In</button>
+                                    </span>
                             </div>
 
-                            <!-- Register / Login -->
-                            <div class="register-login-area">
-                                <a href="#" class="btn">Register</a>
-                                <a href="#" class="btn active">Login</a>
-                            </div>
-
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area bg-img bg-overlay-2by5" style="background-image: url(../img/bg-img/bg11.jpg);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <!-- Hero Content -->
-                    <div class="hero-content text-center">
-                        <h2>나에게 맞는 동아리는..?</h2>
-                        <a href="courses" class="btn clever-btn">성향테스트 시작하기</a>
-                    </div>
+                            <!--
+                            <li><a href="index.html" style="font-size: 0.7cm;">Home</a></li>
+                            <li><a href="courses.html" style="font-size: 0.7cm;">Recommendation</a></li>
+                            <li><a href="themes.html" style="font-size: 0.7cm;">Themes</a></li>
+                            <li><a href="team.hmtl" style="font-size: 0.7cm;"">Team</a></li>
+                            -->
+                            
+                        </ul>
+                        <!-- Search Button//<div class="search-area"> </div>-->
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Hero Area End ##### -->
-
-    <!-- ##### Cool Facts Area Start ##### -->
-    <section class="cool-facts-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <!-- Single Cool Facts Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="250ms">
-                        <div class="icon">
-                            <img src="../img/core-img/docs.png" alt="">
-                        </div>
-                        <h2><span class="counter">68</span></h2>
-                        <h5>동 아 리</h5>
-                    </div>
-                </div>
-
-                <!-- Single Cool Facts Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="icon">
-                            <img src="../img/core-img/star.png" alt="">
-                        </div>
-                        <h2><span class="counter">103</span></h2>
-                        <h5>소 모 임</h5>
-                    </div>
-                </div>
-
-                <!-- Single Cool Facts Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="750ms">
-                        <div class="icon">
-                            <img src="../img/core-img/events.png" alt="">
-                        </div>
-                        <h2><span class="counter">33</span></h2>
-                        <h5>스 터 디</h5>
-                    </div>
-                </div>
-
-                <!-- Single Cool Facts Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="1000ms">
-                        <div class="icon">
-                            <img src="../img/core-img/earth.png" alt="">
-                        </div>
-                        <h2><span class="counter">23</span></h2>
-                        <h5>학 회</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Cool Facts Area End ##### -->
-
-    <!-- ##### Popular Courses Start ##### -->
-    <section class="popular-courses-area section-padding-100-0" style="background-image: url(../img/core-img/texture.png);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h3>Popular Communities</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Popular Course -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="250ms">
-                        <a href="single-course10.html">
-                        <img src="../img/skku-img/rc1.jpg" alt="">
-                        <!-- Course Content -->
-                        <div class="course-content">
-                            <a href="single-course10.html">
-                            <h4>성 동 일</h4>
-                            <div class="meta d-flex align-items-center">
-                                <a href="#">동아리 연합회</a>
-                                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">회장 이유림</a>
-                            </div>
-                            <p>학생회관 401호</p>
-                        </div>
-                        <!-- Seat Rating Fee -->
-                        <div class="seat-rating-fee d-flex justify-content-between">
-                            <div class="seat-rating h-100 d-flex align-items-center">
-                                <div class="seat">
-                                    <i class="fa fa-user" aria-hidden="true"></i> 40
-                                </div>
-                                <div class="rating">
-                                    <i class="fa fa-star" aria-hidden="true"></i> 5.0
-                                </div>
-                            </div>
-                            <div class="course-fee h-100">
-                                <a href="javascript:void plusFriendChat()" class="free">Message</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Popular Course -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <a href="single-course11.html">
-                        <img src="../img/skku-img/likelion.jpg" alt="">
-                        <!-- Course Content -->
-                        <div class="course-content">
-                            <a href="single-course11.html">
-                            <h4>Like Lion</h4>
-                            <div class="meta d-flex align-items-center">
-                                <a href="#">Seoul</a>
-                                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Programming &amp; Web</a>
-                            </div>
-                            <p>Web programming club</p>
-                        </div>
-                        <!-- Seat Rating Fee -->
-                        <div class="seat-rating-fee d-flex justify-content-between">
-                            <div class="seat-rating h-100 d-flex align-items-center">
-                                <div class="seat">
-                                    <i class="fa fa-user" aria-hidden="true"></i> 10
-                                </div>
-                                <div class="rating">
-                                    <i class="fa fa-star" aria-hidden="true"></i> 4.5
-                                </div>
-                            </div>
-                            <div class="course-fee h-100">
-                                    <a href="javascript:void plusFriendChat()" class="free">Message</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Popular Course -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="750ms">
-                        <a href="single-course12.html">
-                        <img src="../img/skku-img/ggun.jpg" alt="">
-                        <!-- Course Content -->
-                        <div class="course-content">
-                            <a href="single-course12.html">
-                            <h4>Ggun</h4>
-                            <div class="meta d-flex align-items-center">
-                                <a href="#">Seoul</a>
-                                <span><i class="fa fa-circle" aria-hidden="true"></i></span>
-                                <a href="#">Art &amp; Dance</a>
-                            </div>
-                            <p>Dance Club</p>
-                        </div>
-                        <!-- Seat Rating Fee -->
-                        <div class="seat-rating-fee d-flex justify-content-between">
-                            <div class="seat-rating h-100 d-flex align-items-center">
-                                <div class="seat">
-                                    <i class="fa fa-user" aria-hidden="true"></i> 10
-                                </div>
-                                <div class="rating">
-                                    <i class="fa fa-star" aria-hidden="true"></i> 4.5
-                                </div>
-                            </div>
-                            <div class="course-fee h-100">
-                                <a href="javascript:void plusFriendChat()" class="free">Message</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Popular Courses End ##### -->
-
-
-        <!-- ##### Upcoming Events Start ##### -->
-        <section class="upcoming-events section-padding-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-heading">
-                            <h3>Upcoming events</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- Single Upcoming Events -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="single-upcoming-events mb-50 wow fadeInUp" data-wow-delay="250ms">
-                            <!-- Events Thumb -->
-                            <div class="events-thumb">
-                                <img src="../img/bg-img/e1.jpg" alt="">
-                                <h6 class="event-date">August 26</h6>
-                                <h4 class="event-title">Networking Day</h4>
-                            </div>
-                            <!-- Date & Fee -->
-                            <div class="date-fee d-flex justify-content-between">
-                                <div class="date">
-                                    <p><i class="fa fa-clock"></i> August 26 @ 9:00 am</p>
-                                </div>
-                                <div class="events-fee">
-                                    <a href="#" class="free">Message</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Upcoming Events -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="single-upcoming-events mb-50 wow fadeInUp" data-wow-delay="500ms">
-                            <!-- Events Thumb -->
-                            <div class="events-thumb">
-                                <img src="../img/bg-img/e2.jpg" alt="">
-                                <h6 class="event-date">August 7</h6>
-                                <h4 class="event-title">Open Doors Day</h4>
-                            </div>
-                            <!-- Date & Fee -->
-                            <div class="date-fee d-flex justify-content-between">
-                                <div class="date">
-                                    <p><i class="fa fa-clock"></i> August 7 @ 9:00 am</p>
-                                </div>
-                                <div class="events-fee">
-                                    <a href="#" class="free">Message</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Upcoming Events -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="single-upcoming-events mb-50 wow fadeInUp" data-wow-delay="750ms">
-                            <!-- Events Thumb -->
-                            <div class="events-thumb">
-                                <img src="../img/bg-img/e3.jpg" alt="">
-                                <h6 class="event-date">August 3</h6>
-                                <h4 class="event-title">Creative Leadership</h4>
-                            </div>
-                            <!-- Date & Fee -->
-                            <div class="date-fee d-flex justify-content-between">
-                                <div class="date">
-                                    <p><i class="fa fa-clock"></i> August 3 @ 9:00 am</p>
-                                </div>
-                                <div class="events-fee">
-                                    <a href="#" class="free">Message</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ##### Upcoming Events End ##### -->
-
-
-    <!-- ##### Best Tutors Start ##### -->
-    <section class="best-tutors-area section-padding-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h3>The Best Programmers in SKKU</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="tutors-slide owl-carousel wow fadeInUp" data-wow-delay="250ms">
-
-                        <!-- Single Tutors Slide -->
-                        <div class="single-tutors-slides">
-                            <!-- Tutor Thumbnail -->
-                            <div class="tutor-thumbnail">
-                                <img src="../img/bg-img/tt2.jpg" alt="">
-                            </div>
-                            <!-- Tutor Information -->
-                            <div class="tutor-information text-center">
-                                <h5>Bae Sunghyun</h5>
-                                <span>Team Leader</span>
-                                <p>SKKU Comedu 14</p>
-                                <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Tutors Slide -->
-                        <div class="single-tutors-slides">
-                            <!-- Tutor Thumbnail -->
-                            <div class="tutor-thumbnail">
-                                <img src="../img/bg-img/tt1.jpg" alt="">
-                            </div>
-                            <!-- Tutor Information -->
-                            <div class="tutor-information text-center">
-                                <h5>Kim Eunjin</h5>
-                                <span>UI/UX</span>
-                                <p>SKKU Comedu 15</p>
-                                <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Tutors Slide -->
-                        <div class="single-tutors-slides">
-                            <!-- Tutor Thumbnail -->
-                            <div class="tutor-thumbnail">
-                                <img src="../img/bg-img/tt5.jpg" alt="">
-                            </div>
-                            <!-- Tutor Information -->
-                            <div class="tutor-information text-center">
-                                <h5>Chon Yeji</h5>
-                                <span>Server/DB</span>
-                                <p>SKKU Comedu 16<br>CMD King</p>
-                                <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Tutors Slide -->
-                        <div class="single-tutors-slides">
-                            <!-- Tutor Thumbnail -->
-                            <div class="tutor-thumbnail">
-                                <img src="../img/bg-img/tt4.jpg" alt="">
-                            </div>
-                            <!-- Tutor Information -->
-                            <div class="tutor-information text-center">
-                                <h5>Yoo ChaeEun</h5>
-                                <span>Messenger</span>
-                                <p>SKKU Comedu 18</p>
-                                <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Tutors Slide -->
-                        <div class="single-tutors-slides">
-                            <!-- Tutor Thumbnail -->
-                            <div class="tutor-thumbnail">
-                                <img src="../img/bg-img/tt3.jpg" alt="">
-                            </div>
-                            <!-- Tutor Information -->
-                            <div class="tutor-information text-center">
-                                <h5>Jang Mi(Rose)</h5>
-                                <span>Messenger</span>
-                                <p>SKKU Comedu 19. Cutty ♥</p>
-                                <div class="social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Best Tutors End ##### -->
-
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <!-- Top Footer Area -->
-        <div class="top-footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="home"><img src="../img/core-img/logo2.png" alt=""></a>
-                        </div>
-                        <!-- Copywrite -->
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </footer>
-    <!-- ##### Footer Area End ##### -->
-
-    <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <script src="../js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="../js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="../js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="../js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="../js/active.js"></script>
-    <!-- OpenChat js -->
-    <script type='text/javascript'>
-        //<![CDATA[
-            // 사용할 앱의 JavaScript 키를 설정해 주세요.
-            Kakao.init('9852f116cbccc716eda45fdfe2470b0c');
-            // 스토리 공유 버튼을 생성합니다.
-            //Kakao.PlusFriend.createChatButton({
-            //   container: '#plusfriend-chat-button',
-            //    plusFriendId: '_RwuuT'
+                <!-- Navbar Toggler//
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div> -->
                 
-                //title: 'consult',
-                //size: 'small',
-                //color: 'yellow',
-                //shape: 'pc',
-                //supportMultipleDensities: true
-            //});
-            //]]>
-            function plusFriendChat(){
-                Kakao.PlusFriend.chat({
-                    //plusFriendId: '_RwuuT'
-                    //plusFriednId: '_VdPJj'
-                    plusFriendId: '_xlrpxlT'
-                });
-            }
-    </script>
+
+                <!-- Menu//
+                    <div class="classy-menu" </div>>
+                 -->
+                
+
+                    <!-- Close Button//
+                    <div class="classycloseIcon">
+                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                    </div> -->
+                    
+
+                    <!-- Nav Start -->
+                    
+                    <!-- Nav End -->
+                
+            <!-- </nav> -->
+
+<!-- ##### Header Area End ##### -->
+
+    <!-- ##### bg img ##### -->
+        <!--<div class="container h-100">-->
+            <!--<div class="row h-100 align-items-center">-->
+    <span id="body">             
+        <!-- Hero Content//style="background-image: url(../img/bg-img/main.jpg);" -->
+        <div id="bg" style="height: 100%; width: 100%; line-height: 0;">
+                <p class='css-typing'>너가 뭘</p>
+                <p class='css-typing'>좋아할지 몰라서</p>
+                <p class='css-typing'>'다' 준비했어</p>
+            <!--
+                <h2>너가 뭘<br>좋아할지<br>몰라서<br>'다' 준비했어<br></h2>
+            -->
+            <div style="font-family: 'Do Hyeon', sans-serif;margin-top:0px;">
+            <a href="recommendation" class="badge badge-danger" style="width:15%;height:15%;font-size:0.6cm;">>> 성향테스트 하기</a>
+            </div>
+            <br>
+            <!--
+            <a href="courses.html" class="btn clever-btn">성향테스트 시작하기</a>-->
+        </div>
+<!-- ##### Hero Area End ##### -->
+
+     <!-- ##### Cool Facts Area Start ##### class="cool-facts-area section-padding-100-0"-->
+    
+  
+     <div id="border1">
+        <h3 style="text-align: center">통계수치</h3><br>
+        <div class="row">
+            <!-- Single Cool Facts Area // class="col-12 col-sm-6 col-lg-3"-->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="250ms" style="background-color: white;">
+                    <a href="themes" class="icon">
+                        <img class="staimg" src="../img/core-img/docs.jpg" alt="">
+                    </a>
+                    <h6><span class="counter">68</span></h6>
+                    <a href="themes"><h5>동 아 리</h5></a>
+                </div>
+            </div>
+
+            <!-- Single Cool Facts Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms"  style="background-color: white;">
+                    <a href="themes" class="icon">
+                    <img class="staimg" src="../img/core-img/star.png" alt="">
+                    </a>
+                    <h6><span class="counter">103</span></h6>
+                    <a href="themes"><h5>소 모 임</h5></a>
+                </div>
+            </div>
+
+            <!-- Single Cool Facts Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="750ms"  style="background-color: white;">
+                    <a href="themes" class="icon">
+                        <img class="staimg" src="../img/core-img/events.jpg" alt="" >
+                    </a>
+                    <h6><span class="counter">33</span></h6>
+                    <a href="themes"><h5>스 터 디</h5></a>
+                </div>
+            </div>
+
+            <!-- Single Cool Facts Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-cool-facts-area text-center mb-100 wow fadeInUp" data-wow-delay="1000ms"  style="background-color: white;">
+                    <a href="themes" class="icon">
+                        <img class="staimg" src="../img/core-img/earth.png" alt="">
+                    </a>
+                    <h6><span class="counter">23</span></h6>
+                    <a href="themes"><h5>학 회</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ##### Cool Facts Area,border1 End ##### -->
+<br><br><br><br>
+<!-- ##### Popular Courses Start// class="popular-courses-area section-padding-100-0" ##### -->
+<section  style="background-color:white;"><!--background-image: url(../img/core-img/texture.png);">-->
+    <div id="border2">
+    <h3>인기 동아리</h3>
+    <br>
+    <div class="container">
+        <div class="row">
+            <!-- Single Popular Course -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="250ms">
+                    <a href="single-course10.html">
+                    <img src="../img/skku-img/rc1.jpg" alt="">
+                    <!-- Course Content -->
+                    <div class="course-content">
+                        <a href="single-course10.html">
+                        <h4>성 동 일</h4>
+                        <div class="meta d-flex align-items-center">
+                            <a href="#">동아리 연합회</a>
+                            <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                            <a href="#">회장 이유림</a>
+                        </div>
+                        <span>학생회관 401호</span>>
+                    </div>
+                    <!-- Seat Rating Fee -->
+                    <div class="seat-rating-fee d-flex justify-content-between">
+                        <div class="seat-rating h-100 d-flex align-items-center">
+                            <div class="seat">
+                                <i class="fa fa-user" aria-hidden="true"></i> 40
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i> 5.0
+                            </div>
+                        </div>
+                        <div class="course-fee h-100">
+                            <a href="javascript:void plusFriendChat()" class="free" style="background-color: rgb(86,194,145)">Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Popular Course -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="500ms">
+                    <a href="single-course11.html">
+                    <img src="../img/skku-img/likelion.jpg" alt="">
+                    <!-- Course Content -->
+                    <div class="course-content">
+                        <a href="single-course11.html">
+                        <h4>멋쟁이 사자처럼</h4>
+                        <div class="meta d-flex align-items-center">
+                            <a href="#">Seoul</a>
+                            <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                            <a href="#">Programming &amp; Web</a>
+                        </div>
+                        <span>Web programming club</span>
+                    </div>
+                    <!-- Seat Rating Fee -->
+                    <div class="seat-rating-fee d-flex justify-content-between">
+                        <div class="seat-rating h-100 d-flex align-items-center">
+                            <div class="seat">
+                                <i class="fa fa-user" aria-hidden="true"></i> 10
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i> 4.5
+                            </div>
+                        </div>
+                        <div class="course-fee h-100">
+                                <a href="javascript:void plusFriendChat()" class="free" style="background-color: rgb(86,194,145)">Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Popular Course -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-popular-course mb-100 wow fadeInUp" data-wow-delay="750ms">
+                    <a href="single-course12.html">
+                    <img src="../img/skku-img/ggun.jpg" alt="">
+                    <!-- Course Content -->
+                    <div class="course-content">
+                        <a href="single-course12.html">
+                        <h4>꾼</h4>
+                        <div class="meta d-flex align-items-center">
+                            <a href="#">Seoul</a>
+                            <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                            <a href="#">Art &amp; Dance</a>
+                        </div>
+                        <span>Dance Club</span>
+                    </div>
+                    <!-- Seat Rating Fee -->
+                    <div class="seat-rating-fee d-flex justify-content-between">
+                        <div class="seat-rating h-100 d-flex align-items-center">
+                            <div class="seat">
+                                <i class="fa fa-user" aria-hidden="true"></i> 10
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i> 4.5
+                            </div>
+                        </div>
+                        <div class="course-fee h-100">
+                            <a href="javascript:void plusFriendChat()" class="free" style="background-color: rgb(86,194,145)">Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ##### Popular courses,border2 End ##### -->
+
+<br><br><br><br>
+    <!-- ##### Upcoming Events Start, border3//
+          class="upcoming-events section-padding-100"
+          ##### -->
+
+    <section style="background-color: white;">
+        <div id="border3">
+        <h3>다가오는 일정</h3>
+        <div class="container">
+
+            <div class="row">
+                <!-- Single Upcoming Events -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-upcoming-events mb-50 wow fadeInUp" data-wow-delay="250ms">
+                        <!-- Events Thumb -->
+                        <div class="events-thumb">
+                            <img src="../img/bg-img/e1.jpg" alt="">
+                            <h6 class="event-date">August 26</h6>
+                            <h4 class="event-title">Networking Day</h4>
+                        </div>
+                        <!-- Date & Fee -->
+                        <div class="date-fee d-flex justify-content-between">
+                            <div class="date">
+                                <span><i class="fa fa-clock"></i> August 26 @ 9:00 am</span>
+                            </div>
+                            <div class="events-fee">
+                                <a href="#" class="free" style="background-color: rgb(86,194,145)">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Upcoming Events -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-upcoming-events mb-50 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Events Thumb -->
+                        <div class="events-thumb">
+                            <img src="../img/bg-img/e2.jpg" alt="">
+                            <h6 class="event-date">August 7</h6>
+                            <h4 class="event-title">Open Doors Day</h4>
+                        </div>
+                        <!-- Date & Fee -->
+                        <div class="date-fee d-flex justify-content-between">
+                            <div class="date">
+                                <span><i class="fa fa-clock"></i> August 7 @ 9:00 am</span>
+                            </div>
+                            <div class="events-fee">
+                                <a href="#" class="free" style="background-color: rgb(86,194,145)">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Upcoming Events -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-upcoming-events mb-50 wow fadeInUp" data-wow-delay="750ms">
+                        <!-- Events Thumb -->
+                        <div class="events-thumb">
+                            <img src="../img/bg-img/e3.jpg" alt="">
+                            <h6 class="event-date">August 3</h6>
+                            <h4 class="event-title">Creative Leadership</h4>
+                        </div>
+                        <!-- Date & Fee -->
+                        <div class="date-fee d-flex justify-content-between">
+                            <div class="date">
+                                <span><i class="fa fa-clock"></i> August 3 @ 9:00 am</span>
+                            </div>
+                            <div class="events-fee">
+                                <a href="#" class="free" style="background-color: rgb(86,194,145)">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- ##### Upcoming Events,border3 End ##### -->
+
+    <br><br><br><br>
+<!-- ##### Best Tutors,border4 Start
+    class="best-tutors-area section-padding-100" ##### -->
+<section  style="background-color:white;">
+    <div id="border4">
+    <h3>개발자들</h3>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="tutors-slide owl-carousel wow fadeInUp" data-wow-delay="250ms">
+
+                    <!-- Single Tutors Slide -->
+                    <div class="single-tutors-slides">
+                        <!-- Tutor Thumbnail -->
+                        <div class="tutor-thumbnail">
+                            <img src="../img/bg-img/tt2.jpg" alt="">
+                        </div>
+                        <!-- Tutor Information -->
+                        <div class="tutor-information text-center">
+                            <h5>Bae Sunghyun</h5>
+                            <span>Team Leader</span><br>
+                            <span>SKKU Comedu 14</span>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Tutors Slide -->
+                    <div class="single-tutors-slides">
+                        <!-- Tutor Thumbnail -->
+                        <div class="tutor-thumbnail">
+                            <img src="../img/bg-img/tt1.jpg" alt="">
+                        </div>
+                        <!-- Tutor Information -->
+                        <div class="tutor-information text-center">
+                            <h5>Kim Eunjin</h5>
+                            <span>UI/UX</span><br>
+                            <span>SKKU Comedu 15</span>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Tutors Slide -->
+                    <div class="single-tutors-slides">
+                        <!-- Tutor Thumbnail -->
+                        <div class="tutor-thumbnail">
+                            <img src="../img/bg-img/tt5.jpg" alt="">
+                        </div>
+                        <!-- Tutor Information -->
+                        <div class="tutor-information text-center">
+                            <h5>Chon Yeji</h5>
+                            <span>Server/DB</span><br>
+                            <span>SKKU Comedu 16<br>CMD King</span>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Tutors Slide -->
+                    <div class="single-tutors-slides">
+                        <!-- Tutor Thumbnail -->
+                        <div class="tutor-thumbnail">
+                            <img src="../img/bg-img/tt4.jpg" alt="">
+                        </div>
+                        <!-- Tutor Information -->
+                        <div class="tutor-information text-center">
+                            <h5>Yoo ChaeEun</h5>
+                            <span>Messenger</span><br>
+                            <span>SKKU Comedu 18</span>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Tutors Slide -->
+                    <div class="single-tutors-slides">
+                        <!-- Tutor Thumbnail -->
+                        <div class="tutor-thumbnail">
+                            <img src="../img/bg-img/tt3.jpg" alt="">
+                        </div>
+                        <!-- Tutor Information -->
+                        <div class="tutor-information text-center">
+                            <h5>Jang Mi(Rose)</h5>
+                            <span>Messenger</span><br>
+                            <span>SKKU Comedu 19. Cutty ♥</span>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ##### Best Tutors End ##### -->
+</span>
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area">
+    <!-- Top Footer Area -->
+    <div class="top-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Footer Logo -->
+                    <div class="footer-logo" style="text-align: center;">
+                        <a href="home"><img src="../img/core-img/beyond.png" alt=""></a>
+                    </div>
+                    <!-- Copywrite -->
+                    <div><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Footer Area -->
+    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+            <a href="#"><span>Email:</span> info@clever.com</a>
+        </div>
+        <!-- Follow Us -->
+        <div class="follow-us">
+            <span>Follow us</span>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer>
+<!-- ##### Footer Area End ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="../js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="../js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="../js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="../js/active.js"></script>
+<!-- OpenChat js -->
+<script type='text/javascript'>
+    //<![CDATA[
+        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('9852f116cbccc716eda45fdfe2470b0c');
+        // 스토리 공유 버튼을 생성합니다.
+        //Kakao.PlusFriend.createChatButton({
+        //   container: '#plusfriend-chat-button',
+        //    plusFriendId: '_RwuuT'
+            
+            //title: 'consult',
+            //size: 'small',
+            //color: 'yellow',
+            //shape: 'pc',
+            //supportMultipleDensities: true
+        //});
+        //]]>
+        function plusFriendChat(){
+            Kakao.PlusFriend.chat({
+                //plusFriendId: '_RwuuT'
+                //plusFriednId: '_VdPJj'
+                plusFriendId: '_xlrpxlT'
+            });
+        }
+</script>
 </body>
 
 </html>
