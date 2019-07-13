@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Club recommendation &amp; SKKU+COMEDU | Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/core-img/favicon3.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bowlby+One+SC|Do+Hyeon|Francois+One|Nanum+Gothic+Coding|Poor+Story&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bowlby+One+SC|Do+Hyeon|Francois+One|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+     <!--부트스트랩CDN-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+     <style>
+        html, body {
+            width: 100%; height: 100%;
+            margin:0; padding:0;
+        }
+
+        .logo{
+            width: 7cm;
+            height: 1.5cm;
+        }
+        #bar{
+            float: right !important;
+            right: 0;
+            color: rgb(86,194,145)!important;
+        }
+        #border1{
+            margin-top: 2cm;
+            margin: 30px;
+            border-style: solid;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+            border-bottom-color: rgb(86,194,145);
+            margin-bottom: 1cm;
+            border-bottom-style: dotted;
+            border-width: 0.15cm;
+            background-color: white;
+           
+        }
+        #border2{
+            margin-top: 2cm;
+            margin: 30px;
+            border-style: solid;
+            border-color: white;
+            border-width: 0.15cm;
+            background-color: white;               
+        }
+        h3{
+            color: rgb(95,95,95);
+            text-align: center;
+            min-width: 100% !important;
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 0.9cm !important;
+            letter-spacing:0.2cm;
+            font-weight: 5;
+        }
+        h6{
+            color: rgb(86,194,145)!important;
+        }
+       #addclub{
+           font-family: 'Do Hyeon', sans-serif;
+       }
+</style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+     <!-- Navbar Area//<div class="clever-main-menu">//
+            <div class="classy-nav-container breakpoint-off"> -->
+                <!-- Menu//<nav class="classy-navbar justify-content-between" id="cleverNav"> -->
+                    <!-- Logo 
+                    <a class="nav-brand" href="home"><img src="../img/core-img/logo.png" alt=""></a>-->
+                    <!-- Navbar Toggler 
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+
+                    </div>-->
+                    <!-- Menu 
+                    <div class="classy-menu">-->
+                        <!-- Close Button 
+
+                        <div class="classycloseIcon">
+
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+
+                        </div>-->
+                        <!-- Nav Start -->
+                        <div class="classynav" style="background-color:rgb(0, 0, 0); line-height: 0;">
+                            <a class="nav-brand" href="home" style="display:inline-block;"><img class="logo" src="../img/core-img/logo.PNG" alt=""></a>   
+                            <ul id="bar" style="font-family: 'Do Hyeon', sans-serif;">
+                                    
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="recommendation" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent: 1cm;letter-spacing:0.1cm;">추천</a></button>&nbsp;
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent: 1cm;letter-spacing:0.1cm;">동아리</a></button>&nbsp;
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">소모임</a></button>&nbsp;
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">스터디</a></button>&nbsp;
+                                    <button style="background-color: rgb(0, 0, 0);" type="button" class="btn btn-dark"><a href="themes" style="color:rgb(95,95,95);font-size: 0.6cm;text-indent:1cm;letter-spacing:0.1cm;">학회</a></button>&nbsp;&nbsp;&nbsp;
+                                    <!--search-->
+                                    <form action="#" method="post"style="display:inline-block;height:0.6cm;">
+                                            <input style="font-family: 'Acme', sans-serif;" type="search" name="search" id="search" placeholder="Search">
+                                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>&nbsp;&nbsp;&nbsp;
+                                    <!--register & login-->
+                                    <div style="font-family: 'Acme', sans-serif;display:inline-block;margin-right: 2cm;margin-top:0.3cm;">
+                                            <span style="color: rgb(245, 255, 226)">
+                                            <button style="background-color: black;" type="button" class="btn btn-outline-dark">Register</button>
+                                            <button style="background-color: black;" type="button" class="btn btn-outline-dark">Log In</button>
+                                            </span>
+                                    </div>
+                                    <!--
+                                    <li><a href="index.html" style="font-size: 0.7cm;">Home</a></li>
+                                    <li><a href="courses.html" style="font-size: 0.7cm;">Recommendation</a></li>
+                                    <li><a href="themes.html" style="font-size: 0.7cm;">Themes</a></li>
+                                    <li><a href="team.hmtl" style="font-size: 0.7cm;"">Team</a></li>
+                                    -->
+                                    
+                            </ul>
+
+                        <!-- Search Button//
+                        <div class="search-area">
+                            <form action="#" method="post">
+                                <input type="search" name="search" id="search" placeholder="Search">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                     -->
+                        
+
+                    </div>
+                    <!-- Nav End -->
+
+<!-- ##### Header Area End ##### -->
+ <!-- ##### Blog Area Start분류시작 ##### -->
+  
+ <div id="border1">
+    <section>
+    <h3>동아리 분류</h3><br><br>
+        <div class="container-fluid">
+                <div class="col-12">
+                    <div class="blog-catagories mb-70 d-flex flex-wrap justify-content-between">
+                        <!-- Single Catagories -->
+                        <div class="single-catagories bg-img" style="background-image: url(../img/bg-img/bc1.jpg); width:20px;">
+                            <a href="themes">
+                                <h6>Art &amp; Culture</h6>
+                            </a>
+                        </div>
+                        <!-- Single Catagories -->
+                        <div class="single-catagories bg-img" style="background-image: url(../img/bg-img/bc2.jpg);">
+                            <a href="themes_volunteer.html">
+                                <h6>Volunteer</h6>
+                            </a>
+                        </div>
+                        <!-- Single Catagories -->
+                        <div class="single-catagories bg-img" style="background-image: url(../img/bg-img/bc3.jpg);">
+                            <a href="themes_study.html">
+                                <h6>Study</h6>
+                            </a>
+                        </div>
+                        <!-- Single Catagories -->
+                        <div class="single-catagories bg-img" style="background-image: url(../img/bg-img/bc4.jpg);">
+                            <a href="themes_sports.html">
+                                <h6>Sports</h6>
+                            </a>
+                        </div>
+                        <!-- Single Catagories -->
+                        <div class="single-catagories bg-img" style="background-image: url(../img/bg-img/bc5.jpg);">
+                            <a href="themes_business.html">
+                                <h6>Business</h6>
+                            </a>
+                        </div>
+                        <!-- Single Catagories -->
+                        <div class="single-catagories bg-img" style="background-image: url(../img/bg-img/bc6.jpg);">
+                            <a href="themes_etc.html">
+                                <h6>Etc</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</section>
+</div>
+<!--분류 끝-->
+<div id="border2">
+            <div class="modal fade" id="addclub" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">동아리 추가하기</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                       <div class="form-group" >
+                         <label for="exampleFormControlFile1">로고 사진</label>
+                         <input type="file" class="form-control-file" id="club-img" name="club-img">
+                       </div>
+                        <div class="form-group">
+                          <label for="clubname" class="col-form-label">동아리 이름</label>
+                          <input type="text" class="form-control" id="club-name" placeholder="동아리 이름">
+                        </div>
+                        <div class="form-group">
+                          <label for="clubsul" class="col-form-label">설명</label>
+                          <textarea class="form-control" id="club-sul"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                      <input type="button" class="btn btn-primary" id="savebtn" data-dismiss="modal" value="추가"> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+             <!-- <button type="button" class="btn btn-primary"  data-target="#addclub" data-name="동아리 이름">
+                    <img src="../img/theme-img/plus.png" alt="addclub">
+             </button> -->
+              
+            <div class="row clubrow">       
+                <!-- Single Blog Area -->
+                <div class="col-12 col-lg-6 ">
+                    <div class="single-blog-area mb-100 wow fadeInUp"  data-wow-delay="250ms">
+                        <img style="width: 70%; height: 25%; padding-top :10%; padding-right: 10%; padding-bottom: 10%; padding-left:20% "src="../img/theme-img/plus.png" class = "addbutton"  data-toggle="modal" data-target="#addclub"alt="동아리 추가하기">
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <a href="#" class="blog-headline">
+                                <h4>동아리 이름</h4>
+                            </a>
+                            <div class="meta d-flex align-items-center">
+                                <a href="#">Seoul/Suwon</a>
+                                <!-- <span><i class="fa fa-circle" aria-hidden="true"></i></span> -->
+                                <a href="#">Art &amp; Culture</a>
+                            </div>
+                            <p>동아리 설명</p>
+                            <button type="button" class="btn btn-secondary deletebtn" data-name="동아리 삭제" style="visibility : hidden">X</button>
+                            <button type="button" class="btn btn-primary deletebtn" data-name="동아리 수정" style="visibility : hidden">수정</button>
+                            <button type="button" class="btn btn-outline-success" style="margin-left:50%; visibility : hidden">MESSAGE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-12">
+                    <div class="load-more text-center mt-100 wow fadeInUp" data-wow-delay="1000ms">
+                        <a href="#" class="btn clever-btn btn-2">Load More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- ##### Blog Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="home"><img src="../img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        <!-- Copywrite -->
+                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+                <a href="#"><span>Email:</span> info@clever.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <!-- 아이콘 출처 표시하라고 하네요.. -->
+            <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="../js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="../js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="../js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="../js/active.js"></script>
+    <!-- Add club-->
+    <script src="../js/addclub.js"></script>
+    <!-- OpenChat js -->
+    <script type='text/javascript'>
+        //<![CDATA[
+            // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('9852f116cbccc716eda45fdfe2470b0c');
+            function plusFriendChat(){
+                Kakao.PlusFriend.chat({
+                    //plusFriendId: '_RwuuT'
+                    //plusFriednId: '_VdPJj'
+                    plusFriendId: '_xlrpxlT'
+                });
+            }
+    </script>
+</body>
+
+</html>
