@@ -588,32 +588,35 @@
     </section>
     <!-- ##### Popular Course Area End ##### -->
 
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
+    
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area">
         <!-- Top Footer Area -->
         <div class="top-footer-area">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="home"><img src="../img/core-img/logo2.png" alt=""></a>
+                        <div class="footer-logo" style="text-align: center;color:rgb(128, 118, 118);">
+                            ◁ Beyond Coding ▷
+                            <!--
+                            <a href="home" style="text-align: center;"><img src="../img/core-img/beyond.png" alt=""></a>-->
                         </div>
                         <!-- Copywrite -->
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <div><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
                     </div>
                 </div>
             </div>
         </div>
-
+    
         <!-- Bottom Footer Area -->
         <div class="bottom-footer-area d-flex justify-content-between align-items-center">
             <!-- Contact Info -->
             <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
+                <a href="#"><span>Phone:</span> 010-6780-9618</a>
+                <a href="#"><span>Email:</span> baesunghyun@clever.com</a>
             </div>
             <!-- Follow Us -->
             <div class="follow-us">
@@ -625,7 +628,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!-- ##### Footer Area End ##### -->
-
+    
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="../js/jquery/jquery-2.2.4.min.js"></script>
@@ -637,6 +640,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="../js/active.js"></script>
-</body>
-
-</html>
+    <!-- OpenChat js -->
+    <script type='text/javascript'>
+        //<![CDATA[
+            // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('9852f116cbccc716eda45fdfe2470b0c');
+            // 스토리 공유 버튼을 생성합니다.
+            //Kakao.PlusFriend.createChatButton({
+            //   container: '#plusfriend-chat-button',
+            //    plusFriendId: '_RwuuT'
+                
+                //title: 'consult',
+                //size: 'small',
+                //color: 'yellow',
+                //shape: 'pc',
+                //supportMultipleDensities: true
+            //});
+            //]]>
+            function plusFriendChat(){
+                Kakao.PlusFriend.chat({
+                    //plusFriendId: '_RwuuT'
+                    //plusFriednId: '_VdPJj'
+                    plusFriendId: '_xlrpxlT'
+                });
+            }
+    </script>
+    </body>
+    
+    </html>
