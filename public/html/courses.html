@@ -40,6 +40,7 @@
                 float: right !important;
                 right: 0;
                 color: rgb(86,194,145)!important;
+                display: inline-block !important;
             }
             h2{
                 font-family: 'Bowlby One SC', cursive;
@@ -110,6 +111,22 @@
            }
            .course-content{
                height: 6cm !important;
+           }
+           .btn#btn-dark{
+               margin: 0.1cm;
+               float: top;
+           }
+           @media (min-width: 200px){
+               .classynav{
+                   float: top;
+               }
+               .btn#btn-dark{
+                   width: 2cm;
+               }
+               #bar{
+                   background-color: black;
+                   white-space : nowrap; 
+               }
            }
         </style>
 </head>
