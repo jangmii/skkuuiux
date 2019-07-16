@@ -18,7 +18,19 @@ div1.className="col-12 col-lg-6";
 
 var div2 = document.createElement("div");
 div2.className="single-blog-area mb-100 wow fadeInUp";
-// div2.data-wow-delay = "500ms"; //에러남ㅠㅠ
+ div2.dataWowDelay = "500ms"; 
+
+var i2 = document.createElement("i");
+i2.className=("updatebtn fas fa-pen");
+i2.style="margin: 3% 0 0 90%";
+i2.setAttribute('onclick','window.location.href="../single-course11.html"');
+div2.appendChild(i2);
+
+var i = document.createElement("i");
+i.className=("deletebtn fas fa-times");
+i.style="margin: 3% 0 0 3%";
+i.addEventListener("click",deleteClub);
+div2.appendChild(i);
 
 var imgg = document.createElement("img");
 imgg.src=img;
@@ -45,10 +57,10 @@ a2.appendChild(document.createTextNode("Seoul/Suwon"));
 div4.appendChild(a2);
 
 var span = document.createElement("span");
-// var i = document.createElement("i");
-// i.className="fa fa-circle";
-// i.aria-hidden ="true";
-// span.appendChild(i);
+var i = document.createElement("i");
+i.className="fa fa-circle";
+i.ariaHidden ="true";
+span.appendChild(i);
 div4.appendChild(span);
 
 var a3 = document.createElement("a");
@@ -58,32 +70,16 @@ div3.appendChild(div4);
 
 var p = document.createElement("p");
 p.appendChild(document.createTextNode(description));
-
-var button = document.createElement("button");
-button.type="button";
-button.className="btn btn-secondary";
-button.classList.add ("deletebtn");
-button.addEventListener("click",deleteClub);
-button.appendChild(document.createTextNode("X"));
-
-var button2 = document.createElement("button");
-button2.type="button";
-button2.className="btn btn-primary";
-button2.classList.add("updatebtn");
-button2.style="margin-left:3%";
-button2.setAttribute('onclick','window.location.href="../single-course11.html"');
-button2.appendChild(document.createTextNode("수정"));
+p.style="display: inline-block;";
+div3.appendChild(p);
 
 var button3 = document.createElement("button");
 button3.type="button";
 button3.className="btn btn-outline-success";
-button3.style="margin-left:55%";
+button3.style="maring-left:20%; display: inline-block;";
 button3.appendChild(document.createTextNode("MESSAGE"));
-
-div3.appendChild(p);
-div3.appendChild(button);
-div3.appendChild(button2);
 div3.appendChild(button3);
+
 div2.appendChild(div3);
 div1.appendChild(div2);
 div1.id = id;
@@ -99,13 +95,12 @@ function handleClick(){
 
 function deleteClub(event){
     const btn = event.target;
-    const parent = btn.parentNode.parentNode.parentNode;
+    const parent = btn.parentNode.parentNode;
     clubRow.removeChild(parent);
     const cleanClubs = clubs.filter(function(club){
         return club.id !== parseInt(parent.id);
     });
     clubs = cleanClubs;
-   //console.log(clubs);
 }
 
 
